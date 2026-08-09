@@ -1,0 +1,73 @@
+{
+  "_comment": "Known-good KPI snapshot computed directly from dem-02-lab's own movies_clean.csv (the pandas reference implementation), scoped deliberately to financial figures (budget/revenue/profit/ROI) which are stable historical facts. vote_count/vote_average/popularity are NOT included here: this project's own Phase 4-6 testing against the live TMDB API already confirmed those metrics genuinely drift over time (e.g. most_popular's actual top-5 set changed, not just its numbers, over the ~3 weeks between the pandas run and this port) -- asserting tight tolerance on them would fail for reasons unrelated to code correctness, not catch real bugs.",
+  "highest_revenue": [
+    {"title": "Avatar", "revenue_musd": 2923.706026},
+    {"title": "Avengers: Endgame", "revenue_musd": 2799.4391},
+    {"title": "Titanic", "revenue_musd": 2264.162353},
+    {"title": "Star Wars: The Force Awakens", "revenue_musd": 2068.223624},
+    {"title": "Avengers: Infinity War", "revenue_musd": 2052.415039}
+  ],
+  "highest_budget": [
+    {"title": "Avengers: Endgame", "budget_musd": 356.0},
+    {"title": "Avengers: Infinity War", "budget_musd": 300.0},
+    {"title": "Star Wars: The Last Jedi", "budget_musd": 300.0},
+    {"title": "The Lion King", "budget_musd": 260.0},
+    {"title": "Star Wars: The Force Awakens", "budget_musd": 245.0}
+  ],
+  "highest_profit": [
+    {"title": "Avatar", "profit_musd": 2686.706026},
+    {"title": "Avengers: Endgame", "profit_musd": 2443.4391},
+    {"title": "Titanic", "profit_musd": 2064.162353},
+    {"title": "Star Wars: The Force Awakens", "profit_musd": 1823.223624},
+    {"title": "Avengers: Infinity War", "profit_musd": 1752.415039}
+  ],
+  "lowest_profit": [
+    {"title": "Star Wars: The Last Jedi", "profit_musd": 1034.407706},
+    {"title": "Incredibles 2", "profit_musd": 1043.225667},
+    {"title": "Beauty and the Beast", "profit_musd": 1106.115964},
+    {"title": "Frozen", "profit_musd": 1124.219009},
+    {"title": "Jurassic World: Fallen Kingdom", "profit_musd": 1140.469037}
+  ],
+  "highest_roi": [
+    {"title": "Avatar", "roi": 12.336312},
+    {"title": "Titanic", "roi": 11.320812},
+    {"title": "Jurassic World", "roi": 11.143583},
+    {"title": "Harry Potter and the Deathly Hallows: Part 2", "roi": 10.73209},
+    {"title": "Frozen II", "roi": 9.691223}
+  ],
+  "lowest_roi": [
+    {"title": "Star Wars: The Last Jedi", "roi": 4.448026},
+    {"title": "Avengers: Age of Ultron", "roi": 5.980441},
+    {"title": "Incredibles 2", "roi": 6.216128},
+    {"title": "The Lion King", "roi": 6.392388},
+    {"title": "Black Panther", "roi": 6.74963}
+  ],
+  "franchise_summary": [
+    {"belongs_to_collection": "The Avengers Collection", "num_movies": 4, "total_budget": 1111.0, "total_revenue": 7776.073348},
+    {"belongs_to_collection": "Star Wars Collection", "num_movies": 2, "total_budget": 545.0, "total_revenue": 3402.63133},
+    {"belongs_to_collection": "Jurassic Park Collection", "num_movies": 2, "total_budget": 320.0, "total_revenue": 2982.006481},
+    {"belongs_to_collection": "Frozen Collection", "num_movies": 2, "total_budget": 300.0, "total_revenue": 2727.902485}
+  ],
+  "director_summary": [
+    {"director": "James Cameron", "num_movies": 2, "total_revenue": 5187.868379},
+    {"director": "Anthony Russo", "num_movies": 2, "total_revenue": 4851.854139},
+    {"director": "Joe Russo", "num_movies": 2, "total_revenue": 4851.854139},
+    {"director": "Joss Whedon", "num_movies": 2, "total_revenue": 2924.219209},
+    {"director": "Jennifer Lee", "num_movies": 2, "total_revenue": 2727.902485},
+    {"director": "Chris Buck", "num_movies": 2, "total_revenue": 2727.902485},
+    {"director": "J.J. Abrams", "num_movies": 1, "total_revenue": 2068.223624},
+    {"director": "Colin Trevorrow", "num_movies": 1, "total_revenue": 1671.537444},
+    {"director": "Jon Favreau", "num_movies": 1, "total_revenue": 1662.020819},
+    {"director": "James Wan", "num_movies": 1, "total_revenue": 1515.4},
+    {"director": "Ryan Coogler", "num_movies": 1, "total_revenue": 1349.926083},
+    {"director": "David Yates", "num_movies": 1, "total_revenue": 1341.511219},
+    {"director": "Rian Johnson", "num_movies": 1, "total_revenue": 1334.407706},
+    {"director": "J. A. Bayona", "num_movies": 1, "total_revenue": 1310.469037},
+    {"director": "Bill Condon", "num_movies": 1, "total_revenue": 1266.115964},
+    {"director": "Brad Bird", "num_movies": 1, "total_revenue": 1243.225667}
+  ],
+  "franchise_vs_standalone": {
+    "Franchise": {"mean_revenue": 1682.775216, "mean_budget": 218.0, "median_roi": 7.786117},
+    "Standalone": {"mean_revenue": 1765.139159, "mean_budget": 180.0, "median_roi": 9.617018}
+  }
+}
