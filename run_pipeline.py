@@ -1,12 +1,3 @@
-"""
-run_pipeline.py
-================
-Headless end-to-end run: ingest -> preprocess -> analyze -> visualize.
-Exists so tests and `make verify` have something to invoke without a
-notebook -- MAIN.ipynb is the primary interactive walkthrough and mirrors
-this same sequence cell by cell.
-"""
-
 import sys
 
 import matplotlib
